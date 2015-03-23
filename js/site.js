@@ -98,7 +98,7 @@ function showComment(id) {
     });
 }
 
-var runSpeed = 2000;
+var runSpeed = 8000;
 
 // The number of changes to show per minute
 osmStream.runFn(function(err, data) {
@@ -116,7 +116,7 @@ osmStream.runFn(function(err, data) {
             (+new Date(b.meta.tilestamp));
     });
     // if (queue.length > 2000) queue = queue.slice(0, 2000);
-    runSpeed = 1500;
+    runSpeed = 7500;
 });
 
 function doDrawWay() {
